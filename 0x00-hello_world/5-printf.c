@@ -1,12 +1,9 @@
-#include<stdio.h>
- 
-/**
- *  main-Entry point
- *  
- *  Return Always 0 (success)
- */
-int main(void)
-{  
-	 printf("with proper grammar\, but the outcome is a piece of art\,");
-	   return 0;
+#include <stdio.h>
+
+int main(void) {
+    /* Use printf to print the required message */
+    printf("with proper grammar, but the outcome is a piece of art,\n");
+
+    /* Return 0 to indicate successful execution */
+    return 0;
 }
