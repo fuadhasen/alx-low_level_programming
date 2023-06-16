@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <math.h>
-
 /**
  * main - Entry point
  *
@@ -11,16 +9,14 @@
 int main(void)
 {
 	int n;
-	int abs_n;
 	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	abs_n = abs(n);
-	last_digit = abs_n % 10;
+	last_digit = n % 10;
 
-	printf("Last digit of %d is %d ", n, last_digit);
+	printf("Last digit of %d is %d", n, last_digit);
 
 	if (last_digit > 5)
 
