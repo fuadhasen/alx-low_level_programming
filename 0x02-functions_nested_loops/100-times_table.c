@@ -30,7 +30,7 @@ void putformat(int n)
 {
 	if (n <= 9)
 	{
-i		_putchar(',');
+		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 		_putchar(' ');
