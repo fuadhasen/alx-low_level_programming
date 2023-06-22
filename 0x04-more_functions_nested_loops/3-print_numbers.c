@@ -1,19 +1,18 @@
-#include <unistd.h>
 #include "main.h"
 
-int _putchar(char c)
-{
-	return write(1, &c, 1);
-}
+/**
+*print_numbers - print 0123456789
+* owned by Bwave ICT
+*Return: void
+*/
 
 void print_numbers(void)
 {
-	char numbers[] = "0123456789\n";
-	int i = 0;
+        char c;
 
-	while (numbers[i] != '\0')
-	{
-		_putchar(numbers[i]);
-		i++;
-	}
+        for (c = '0'; c <= '9'; c++)
+        {
+        _putchar(c);
+        }
+        _putchar('\n');
 }
