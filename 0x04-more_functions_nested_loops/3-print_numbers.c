@@ -1,16 +1,19 @@
+#include <unistd.h>
 #include "main.h"
-/**
- * print_numbers - function that checks for uppercase character.
- * Return: 0
- */
+
+int _putchar(char c)
+{
+	return write(1, &c, 1);
+}
+
 void print_numbers(void)
 {
-	char c = '0';
+	char numbers[] = "0123456789\n";
+	int i = 0;
 
-	while (c <= '9')
+	while (numbers[i] != '\0')
 	{
-		_putchar(c);
-		c++;
+		_putchar(numbers[i]);
+		i++;
 	}
-_putchar('\n');
 }
