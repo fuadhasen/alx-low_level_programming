@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * free_list - fre the memory 
+ * free_list - free the memory 
  *
  * @head: pointer for first head
  */
