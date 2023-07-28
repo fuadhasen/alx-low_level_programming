@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * free_list - Realease the memory allocated for a list
+ * free_list - fre the memory 
  *
- * @head: A pointer to the first node of the list to free
+ * @head: pointer for first head
  */
 void free_list(list_t *head)
 {
