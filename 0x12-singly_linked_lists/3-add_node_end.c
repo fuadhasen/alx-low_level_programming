@@ -3,10 +3,10 @@
 #include "lists.h"
 
 /**
- * _strlen - finds the length of a string
- * @str: string to find the length of
+ * _strlen - get length of string
+ * @str: string
  *
- * Return: length of string
+ * Return:  string length
  */
 unsigned int _strlen(char *str)
 {
@@ -18,11 +18,11 @@ unsigned int _strlen(char *str)
 }
 
 /**
- * add_node_end - adds a new node to the end of linked list
- * @head: double pointer to a linked list
- * @str: string to add to the new node
+ * add_node_end -add node to linked list
+ * @head: double pointer 
+ * @str: string that to add to the new node
  *
- * Return: pointer to the new node
+ * Return: pointer 
  */
 list_t *add_node_end(list_t **head, const char *str)
 {

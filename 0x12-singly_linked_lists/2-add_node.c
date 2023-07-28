@@ -20,7 +20,7 @@ int _strlen(const char *s)
 }
 
 /**
- * add_node - add new node at start
+ * add_node - addition of node at beggining
  * @head: head 
  * @str: value 
  * Return: nodes
