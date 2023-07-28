@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * myStartupFun - Apply the constructor attribute to myStartupFun() so that it
+ * myStartupFun - Apply the constructor to myStartupFun() in order to
  *   is executed before main()
  */
 void myStartupFun(void) __attribute__ ((constructor));
