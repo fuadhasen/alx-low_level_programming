@@ -4,18 +4,18 @@
 #include "lists.h"
 
 /**
- * list_len - check the code for Holberton School students.
- * @h: name of the list
- * Return: the number of nodes.
+ * list_len -list length
+ * @h: list name
+ * Return: node name
  */
 size_t list_len(const list_t *h)
 {
-	int count = 0;
+	int i = 0;
 
 	while (h)
 	{
-		count++;
+		i++;
 		h = h->next;
 	}
-	return (count);
+	return (i);
 }
