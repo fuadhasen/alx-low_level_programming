@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_listint - print all elements of the list 
+ * print_listint - print all elements of the list
  *
- * @h: head 
+ * @h: head
  *
  * Return: number of nodes
  *
