@@ -3,7 +3,7 @@
 
 /**
  * insert_nodeint_at_index - add node at index
- * @head: pointe 
+ * @head: pointe
  * @idx: index where the node is inserted
  * @n: value of new node
  *
