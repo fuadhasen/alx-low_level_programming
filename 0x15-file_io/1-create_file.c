@@ -2,8 +2,8 @@
 
 /**
  * create_file - creat file
- * @filename- the file name
- * @text_content - the content
+ * @filename:  the file name
+ * @text_content:  the content
  *
  * Return: 1 on success, -1 on failure
  */
