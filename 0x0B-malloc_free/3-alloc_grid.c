@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * alloc_grid - grid allocation
