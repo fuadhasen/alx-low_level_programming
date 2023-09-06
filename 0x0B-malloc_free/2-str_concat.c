@@ -18,13 +18,19 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
+	if 
 	len1 = strlen(s1);
 	len2 = strlen(s2);
 
 	newstr = malloc(len1 + len2 + 1);
 	if (newstr == NULL)
 		return (NULL);
-	strcpy(newstr, s1);
-	strcat(newstr, s2);
+	if (s1 != NULL)
+		strcpy(newstr, s1);
+	else
+		newstr[0] = '\0';
+
+	if (s2 != NULL)
+		strcat(newstr, s2);
 	return (newstr);
 }
