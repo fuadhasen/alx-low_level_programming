@@ -22,28 +22,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 != NULL)
 		len2 = strlen(s2);
 	if (n >= len2)
-	{
-		new = malloc(len1 + len2 + 1);
-		if (new == NULL)
-			return (NULL);
 		n = len2;
-		if (s1 != NULL)
-			strcpy(new, s1);
-		else
-			new[0] = '\0';
-		strncat(new, s2, n);
-	}
+	new = malloc(len1 + n + 1);
+	if (new == NULL)
+		return (NULL);
+	if (s1 != NULL)
+		strcpy(new, s1);
 	else
-	{
-		new = malloc(len1 + len2 + 1);
-		if (new == NULL)
-			return (NULL);
-		if (s1 != NULL)
-			strcpy(new, s1);
-		else
-			new[0] = '\0';
-		strncat(new, s2, n);
-	}
+		new[0] = '\0';
+
+	strncat(new, s2, n);
 
 	return (new);
 }
