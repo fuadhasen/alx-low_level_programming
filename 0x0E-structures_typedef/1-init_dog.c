@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -12,9 +11,8 @@
  * Return: no return
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owneri)
 {
-	d = malloc(sizeof(struct dog));
 	if (d == NULL)
 		return (NULL);
 	d->name = name;
