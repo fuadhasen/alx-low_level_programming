@@ -1,7 +1,6 @@
-#ifndef M
-#define M
-
 #include <stddef.h>
+#ifndef H
+#define H
 
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
