@@ -4,7 +4,6 @@
  * print_list - print the list
  * @h: head pointer
  *
- *
  * Return: num of nod
  */
 
