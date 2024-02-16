@@ -4,7 +4,7 @@
  * hash_table_create - creat Ht structure
  * @size: capacity of the hash table
  *
- * Returns: to table
+ * Return: pointer to Htable
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
