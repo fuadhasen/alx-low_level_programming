@@ -3,6 +3,7 @@
  * hash_table_set - set the node on the hash table
  * @key: key
  * @value: value to be stored on the Ht
+ * @ht: pointer to Ht
  *
  * Return: 1 success, 0 Fail
  */
@@ -11,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *head, *new;
 	unsigned long int idx;
 
-	if (key == NULL)
+	if (key == NULL || ht == NULL)
 		return (0);
 
 	new = malloc(sizeof(hash_node_t));
