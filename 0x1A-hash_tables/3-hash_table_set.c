@@ -9,11 +9,27 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *head, *new;
+	hash_node_t *head, *new, *temp;
 	unsigned long int idx;
 
 	if (key == NULL || ht == NULL)
 		return (0);
+
+	idx = key_index((const unsigned char *)key, ht->size);
+	head = ht->array[idx];
+	if (head != NULL)
+	{
+		temp = head;
+		while (temp != NULL)
+		{
+			if (strcmp(temp->key, key) == 0)
+			{
+                        	strcpy(temp->value, value);
+                        	return (1);
+			}
+			temp = temp->next;
+		}
+	}
 
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
@@ -31,22 +47,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new);
 		return (0);
 	}
-	idx = key_index((const unsigned char *)key, ht->size);
-	head = ht->array[idx];
+
 	if (head == NULL)
 	{
 		new->next = NULL;
 		ht->array[idx] = new;
 	}
-	else
-	{
-		if (strcmp(head->key, key) == 0)
-		{
-			strcpy(head->value, value);
-			return (1);
-		}
-	}
-	new->next = ht->array[idx];
+	new->next = head;
 	ht->array[idx] = new;
+
 	return (1);
 }
