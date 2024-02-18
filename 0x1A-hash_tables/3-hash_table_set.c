@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(head->key, key) == 0)
 		{
-			strcpy(head->value, value);
+			strcpy(ht->array[idx]->value, value);
 			return (1);
 		}
 		head = head->next;
